@@ -1,0 +1,327 @@
+*{
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body{
+  margin: 0;
+}
+
+
+@media only screen and (min-width: 700px){
+.header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 14px;
+    background-color: rgba(0,0,7,0.6);
+    color: #f1f1f1;
+    height: 10vh;
+
+  }
+
+  #logo{
+    display: inline;
+    margin-left: -10px;
+  }
+
+  #logo > img{
+    height: 8.5vh;
+  }
+
+
+  nav{
+    font-size: 120%;
+    height: 100px;
+    width: auto;
+    float: right;
+    display: inline;
+  
+  }
+
+  nav > a{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 5vh;
+    display: inline;
+  }
+
+  nav > a:hover{
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  nav > a > img{
+    width: 1.5vw;
+    height: auto;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-areas: 
+    'first'
+    'second';
+    width: 80%;
+    max-width: 80vw;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    grid-gap: 50px;
+  }
+
+  .first{
+    padding: 50px;
+    grid-area: first;
+    text-align: center;
+  }
+  .first > h2{
+    color: steelblue;
+  }
+  .first > p{
+    color: gray;
+  }
+
+  div > a{
+    display: block;
+    color: white;
+
+  }
+
+  .second{
+    grid-area: second;
+    color: steelblue;
+  }
+
+  .second > img{
+    max-width: 80vw;
+  }
+
+  .second * a{
+    text-decoration: none;
+    border-radius: 2px;
+    color: green;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .second * a:hover{
+    background-color: rgba(0,0,0, 0.1);
+  }
+
+  .map{
+    width:60vh;
+    height:60vh;
+  }
+
+  .bottomstuffcontainer{
+    position: relative;
+    bottom: 0;
+    background-color: rgba(0,0,20,0.6);
+  }
+
+  .bottomstuff{
+    display: grid;
+    grid-template-areas: 
+    'za za za za'
+    'prvi drugi treci cetvrti'
+    'peti sesti sedmi osmi';
+    height: 60vh;
+    width: auto;
+    color: white;
+    padding: 10px;
+  }
+
+  .bottomstuff > a > img{
+    height: 15vh;
+    width: auto;
+  }
+
+  .bottomstuff > b{
+    font-size: 150%;
+  }
+
+  .bottomstuff > a{
+    width: 1vw;
+    display: inline-table;
+    font-size: 130%;
+    text-decoration: none;
+  }
+
+  .slika{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 60vh;
+    z-index: -100;
+    overflow: hidden;
+  }
+
+  .slika > img{
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+  }
+
+  /*.videoo{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    z-index: -100;
+    }*/
+
+    .footerframe{
+      position: relative;
+      background-color: steelblue;
+      color: black;
+      width: auto;
+      height: auto;
+      bottom: 0;
+      padding-left: 5px;
+    }
+
+    .footer{
+      display: grid;
+      grid-template-areas: 
+      'jedan dva';
+      
+    }
+
+    .jedan{
+      grid-area: jedan;
+    }
+
+    .dva{
+      grid-area: dva;
+      position: absolute;
+      margin-left: 16vw;
+    }
+
+    .dva > a > img{
+      height: 10vh;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      width: 100%;
+      position: relative;
+      height: auto;
+      overflow: hidden;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      height: 60vh;
+      display: none;
+      overflow: hidden;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 200%;
+      padding: 8px 12px;
+      background-color: rgba(0,0,0,0.4);
+      position: absolute;
+      font-weight: bold;
+      top: 0;
+      margin-top: 16%;
+      width: 100%;
+      text-align: center;
+      font-family: arial;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    input{
+      border-radius: 4px;
+    }
+
+    textarea{
+      border-radius: 4px;
+      width: 70vw;
+      height: 20vh;
+      resize: none;
+    }
+
+    form{
+      padding: 10px;
+    }
+
+  }
+}
